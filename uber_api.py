@@ -1,0 +1,9 @@
+from uber_rides.session import Session
+from uber_rides.client import UberRidesClient
+
+ACCESS_TOKEN = "IA.VUNmGAAAAAAAEgASAAAABwAIAAwAAAAAAAAAEgAAAAAAAAGgAAAAFAAAAAAADgAQAAQAAAAIAAwAAAAOAAAAdAAAABwAAAAEAAAAEAAAABnS3c6N4vJ2hk_a0xYRLNpOAAAAl7d8SnAscywF7jK7EC7fFwN3k0DeZnGYOhQrR29V8kotY_M_JkcNPNNUnTeXam-b7wzE1O4rPW41O9jhJzJ229oKu9t11gOBW5kHaibiAAAMAAAAhhPExmhZTXNBrGi7JAAAAGIwZDg1ODAzLTM4YTAtNDJiMy04MDZlLTdhNGNmOGUxOTZlZQ"
+session = Session(oauth2credential=ACCESS_TOKEN)
+client = UberRidesClient(session)
+
+response = client.get_products(37.77, -122.41)
+
