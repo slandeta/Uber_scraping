@@ -1,7 +1,5 @@
-account_sid = [REDACTED]
-auth_token = [REDACTED]
+account_sid = "string"
+auth_token = "string"
 
-twilio_number = "+13466393660"
-target_number = "+13212660546"
-
-# +17039438026
+twilio_number = "string"
+target_number = "string"
